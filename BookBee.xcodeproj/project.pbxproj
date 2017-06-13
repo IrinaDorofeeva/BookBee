@@ -13,6 +13,8 @@
 		041891AE1EF09E4400A8ADD7 /* BookBee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041891AC1EF09E4400A8ADD7 /* BookBee.xcdatamodeld */; };
 		041891B01EF09E4400A8ADD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041891AF1EF09E4400A8ADD7 /* Assets.xcassets */; };
 		041891B31EF09E4400A8ADD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041891B11EF09E4400A8ADD7 /* LaunchScreen.storyboard */; };
+		041891BB1EF09E6800A8ADD7 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 041891BA1EF09E6800A8ADD7 /* GoogleService-Info (1).plist */; };
+		BC2A9546B479926B592391F3 /* Pods_BookBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		041891AF1EF09E4400A8ADD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041891B21EF09E4400A8ADD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041891B41EF09E4400A8ADD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041891BA1EF09E6800A8ADD7 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		7986F814DA5F25C224D7D5F9 /* Pods-BookBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookBee/Pods-BookBee.release.xcconfig"; sourceTree = "<group>"; };
+		BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F00D72DBA02B4FF11D4175 /* Pods-BookBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookBee/Pods-BookBee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2A9546B479926B592391F3 /* Pods_BookBee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				041891A41EF09E4400A8ADD7 /* BookBee */,
 				041891A31EF09E4400A8ADD7 /* Products */,
+				0F108B9F43AE3D3212BA512F /* Pods */,
+				2BB3D32D3E3D56369525B242 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				041891B11EF09E4400A8ADD7 /* LaunchScreen.storyboard */,
 				041891B41EF09E4400A8ADD7 /* Info.plist */,
 				041891AC1EF09E4400A8ADD7 /* BookBee.xcdatamodeld */,
+				041891BA1EF09E6800A8ADD7 /* GoogleService-Info (1).plist */,
 			);
 			path = BookBee;
+			sourceTree = "<group>";
+		};
+		0F108B9F43AE3D3212BA512F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2F00D72DBA02B4FF11D4175 /* Pods-BookBee.debug.xcconfig */,
+				7986F814DA5F25C224D7D5F9 /* Pods-BookBee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2BB3D32D3E3D56369525B242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041891B71EF09E4400A8ADD7 /* Build configuration list for PBXNativeTarget "BookBee" */;
 			buildPhases = (
+				CBC4B10BA0CE6F9AB733C5B0 /* [CP] Check Pods Manifest.lock */,
 				0418919E1EF09E4400A8ADD7 /* Sources */,
 				0418919F1EF09E4400A8ADD7 /* Frameworks */,
 				041891A01EF09E4400A8ADD7 /* Resources */,
+				0C0E1B375CAB538515B9CE6C /* [CP] Embed Pods Frameworks */,
+				20E68B0997FE96C720450E9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,10 +159,59 @@
 				041891B31EF09E4400A8ADD7 /* LaunchScreen.storyboard in Resources */,
 				041891B01EF09E4400A8ADD7 /* Assets.xcassets in Resources */,
 				041891AB1EF09E4400A8ADD7 /* Main.storyboard in Resources */,
+				041891BB1EF09E6800A8ADD7 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C0E1B375CAB538515B9CE6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookBee/Pods-BookBee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20E68B0997FE96C720450E9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookBee/Pods-BookBee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC4B10BA0CE6F9AB733C5B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0418919E1EF09E4400A8ADD7 /* Sources */ = {
@@ -260,6 +339,7 @@
 		};
 		041891B81EF09E4400A8ADD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F00D72DBA02B4FF11D4175 /* Pods-BookBee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookBee/Info.plist;
@@ -272,6 +352,7 @@
 		};
 		041891B91EF09E4400A8ADD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7986F814DA5F25C224D7D5F9 /* Pods-BookBee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookBee/Info.plist;
