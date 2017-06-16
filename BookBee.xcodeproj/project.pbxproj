@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		041891A61EF09E4400A8ADD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041891A51EF09E4400A8ADD7 /* AppDelegate.swift */; };
-		041891A81EF09E4400A8ADD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041891A71EF09E4400A8ADD7 /* ViewController.swift */; };
+		041891A81EF09E4400A8ADD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041891A71EF09E4400A8ADD7 /* LoginViewController.swift */; };
 		041891AB1EF09E4400A8ADD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041891A91EF09E4400A8ADD7 /* Main.storyboard */; };
 		041891AE1EF09E4400A8ADD7 /* BookBee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041891AC1EF09E4400A8ADD7 /* BookBee.xcdatamodeld */; };
 		041891B01EF09E4400A8ADD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041891AF1EF09E4400A8ADD7 /* Assets.xcassets */; };
 		041891B31EF09E4400A8ADD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041891B11EF09E4400A8ADD7 /* LaunchScreen.storyboard */; };
-		041891BB1EF09E6800A8ADD7 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 041891BA1EF09E6800A8ADD7 /* GoogleService-Info (1).plist */; };
+		041891BB1EF09E6800A8ADD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041891BA1EF09E6800A8ADD7 /* GoogleService-Info.plist */; };
+		042768221EF33A2400604311 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042768211EF33A2400604311 /* Utilities.swift */; };
 		BC2A9546B479926B592391F3 /* Pods_BookBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		041891A21EF09E4400A8ADD7 /* BookBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041891A51EF09E4400A8ADD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		041891A71EF09E4400A8ADD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		041891A71EF09E4400A8ADD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		041891AA1EF09E4400A8ADD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		041891AD1EF09E4400A8ADD7 /* BookBee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookBee.xcdatamodel; sourceTree = "<group>"; };
 		041891AF1EF09E4400A8ADD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041891B21EF09E4400A8ADD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041891B41EF09E4400A8ADD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		041891BA1EF09E6800A8ADD7 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		041891BA1EF09E6800A8ADD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		042768211EF33A2400604311 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7986F814DA5F25C224D7D5F9 /* Pods-BookBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookBee/Pods-BookBee.release.xcconfig"; sourceTree = "<group>"; };
 		BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F00D72DBA02B4FF11D4175 /* Pods-BookBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookBee/Pods-BookBee.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,13 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				041891A51EF09E4400A8ADD7 /* AppDelegate.swift */,
-				041891A71EF09E4400A8ADD7 /* ViewController.swift */,
+				041891A71EF09E4400A8ADD7 /* LoginViewController.swift */,
 				041891A91EF09E4400A8ADD7 /* Main.storyboard */,
 				041891AF1EF09E4400A8ADD7 /* Assets.xcassets */,
 				041891B11EF09E4400A8ADD7 /* LaunchScreen.storyboard */,
 				041891B41EF09E4400A8ADD7 /* Info.plist */,
 				041891AC1EF09E4400A8ADD7 /* BookBee.xcdatamodeld */,
-				041891BA1EF09E6800A8ADD7 /* GoogleService-Info (1).plist */,
+				041891BA1EF09E6800A8ADD7 /* GoogleService-Info.plist */,
+				042768211EF33A2400604311 /* Utilities.swift */,
 			);
 			path = BookBee;
 			sourceTree = "<group>";
@@ -159,7 +162,7 @@
 				041891B31EF09E4400A8ADD7 /* LaunchScreen.storyboard in Resources */,
 				041891B01EF09E4400A8ADD7 /* Assets.xcassets in Resources */,
 				041891AB1EF09E4400A8ADD7 /* Main.storyboard in Resources */,
-				041891BB1EF09E6800A8ADD7 /* GoogleService-Info (1).plist in Resources */,
+				041891BB1EF09E6800A8ADD7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041891A81EF09E4400A8ADD7 /* ViewController.swift in Sources */,
+				041891A81EF09E4400A8ADD7 /* LoginViewController.swift in Sources */,
 				041891A61EF09E4400A8ADD7 /* AppDelegate.swift in Sources */,
+				042768221EF33A2400604311 /* Utilities.swift in Sources */,
 				041891AE1EF09E4400A8ADD7 /* BookBee.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +386,7 @@
 				041891B91EF09E4400A8ADD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,7 +7,12 @@ target 'BookBee' do
 
   # Pods for BookBee
 
-pod 'Firebase/Core'
+
+ pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'SDWebImage'
 
 
 end
