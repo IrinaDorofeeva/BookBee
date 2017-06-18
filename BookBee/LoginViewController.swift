@@ -80,8 +80,20 @@ class LoginViewController: UIViewController {
                             print ("user created")
                             
                             
-                                Database.database().reference().child("users").child((user?.uid)!).child("email").setValue(user?.email)
+                            Database.database().reference().child("users").child((user?.uid)!).child("email").setValue(user?.email)
                             Database.database().reference().child("users").child((user?.uid)!).child("name").setValue(self.nameTextField.text)
+                            Database.database().reference().child("users").child((user?.uid)!).child("location").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("title").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("author").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("about").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("age").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("gender").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("picture").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("following").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("chats").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("groups").setValue("")
+                            Database.database().reference().child("users").child((user?.uid)!).child("extraSettings").setValue("")
+                            
                             
                             //self.performSegue(withIdentifier: "signIn", sender: nil)
                             self.dismiss(animated: true, completion: nil)
