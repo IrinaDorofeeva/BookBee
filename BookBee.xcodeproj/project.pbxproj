@@ -16,6 +16,11 @@
 		041891BB1EF09E6800A8ADD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041891BA1EF09E6800A8ADD7 /* GoogleService-Info.plist */; };
 		041FFFBF1EF6180D00EC9967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041FFFBE1EF6180D00EC9967 /* MapKit.framework */; };
 		041FFFC11EF618AB00EC9967 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFC01EF618AB00EC9967 /* MapViewController.swift */; };
+		041FFFD41EF6284200EC9967 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFCB1EF6284200EC9967 /* GeoFire.m */; };
+		041FFFD51EF6284200EC9967 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFCD1EF6284200EC9967 /* GFBase32Utils.m */; };
+		041FFFD61EF6284200EC9967 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFCF1EF6284200EC9967 /* GFGeoHash.m */; };
+		041FFFD71EF6284200EC9967 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFD11EF6284200EC9967 /* GFGeoHashQuery.m */; };
+		041FFFD81EF6284200EC9967 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFD31EF6284200EC9967 /* GFQuery.m */; };
 		042768221EF33A2400604311 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042768211EF33A2400604311 /* Utilities.swift */; };
 		BC2A9546B479926B592391F3 /* Pods_BookBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +37,22 @@
 		041891BA1EF09E6800A8ADD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		041FFFBE1EF6180D00EC9967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		041FFFC01EF618AB00EC9967 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		041FFFC41EF6284200EC9967 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		041FFFC51EF6284200EC9967 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		041FFFC61EF6284200EC9967 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		041FFFC71EF6284200EC9967 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		041FFFC81EF6284200EC9967 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		041FFFCA1EF6284200EC9967 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		041FFFCB1EF6284200EC9967 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		041FFFCC1EF6284200EC9967 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		041FFFCD1EF6284200EC9967 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		041FFFCE1EF6284200EC9967 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		041FFFCF1EF6284200EC9967 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		041FFFD01EF6284200EC9967 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		041FFFD11EF6284200EC9967 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		041FFFD21EF6284200EC9967 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		041FFFD31EF6284200EC9967 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		041FFFD91EF629F600EC9967 /* BookBee-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookBee-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		042768211EF33A2400604311 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7986F814DA5F25C224D7D5F9 /* Pods-BookBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookBee/Pods-BookBee.release.xcconfig"; sourceTree = "<group>"; };
 		BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +93,7 @@
 		041891A41EF09E4400A8ADD7 /* BookBee */ = {
 			isa = PBXGroup;
 			children = (
+				041FFFC21EF6284200EC9967 /* GeoFire */,
 				041891A51EF09E4400A8ADD7 /* AppDelegate.swift */,
 				041891A71EF09E4400A8ADD7 /* LoginViewController.swift */,
 				041FFFC01EF618AB00EC9967 /* MapViewController.swift */,
@@ -82,8 +104,48 @@
 				041891AC1EF09E4400A8ADD7 /* BookBee.xcdatamodeld */,
 				041891BA1EF09E6800A8ADD7 /* GoogleService-Info.plist */,
 				042768211EF33A2400604311 /* Utilities.swift */,
+				041FFFD91EF629F600EC9967 /* BookBee-Bridging-Header.h */,
 			);
 			path = BookBee;
+			sourceTree = "<group>";
+		};
+		041FFFC21EF6284200EC9967 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				041FFFC31EF6284200EC9967 /* API */,
+				041FFFC81EF6284200EC9967 /* GeoFire-Prefix.pch */,
+				041FFFC91EF6284200EC9967 /* Implementation */,
+			);
+			name = GeoFire;
+			path = "../../../geofire-objc/GeoFire";
+			sourceTree = "<group>";
+		};
+		041FFFC31EF6284200EC9967 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				041FFFC41EF6284200EC9967 /* GeoFire.h */,
+				041FFFC51EF6284200EC9967 /* GFCircleQuery.h */,
+				041FFFC61EF6284200EC9967 /* GFQuery.h */,
+				041FFFC71EF6284200EC9967 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		041FFFC91EF6284200EC9967 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				041FFFCA1EF6284200EC9967 /* GeoFire+Private.h */,
+				041FFFCB1EF6284200EC9967 /* GeoFire.m */,
+				041FFFCC1EF6284200EC9967 /* GFBase32Utils.h */,
+				041FFFCD1EF6284200EC9967 /* GFBase32Utils.m */,
+				041FFFCE1EF6284200EC9967 /* GFGeoHash.h */,
+				041FFFCF1EF6284200EC9967 /* GFGeoHash.m */,
+				041FFFD01EF6284200EC9967 /* GFGeoHashQuery.h */,
+				041FFFD11EF6284200EC9967 /* GFGeoHashQuery.m */,
+				041FFFD21EF6284200EC9967 /* GFQuery+Private.h */,
+				041FFFD31EF6284200EC9967 /* GFQuery.m */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		0F108B9F43AE3D3212BA512F /* Pods */ = {
@@ -230,9 +292,14 @@
 			files = (
 				041891A81EF09E4400A8ADD7 /* LoginViewController.swift in Sources */,
 				041891A61EF09E4400A8ADD7 /* AppDelegate.swift in Sources */,
+				041FFFD61EF6284200EC9967 /* GFGeoHash.m in Sources */,
+				041FFFD81EF6284200EC9967 /* GFQuery.m in Sources */,
 				042768221EF33A2400604311 /* Utilities.swift in Sources */,
 				041FFFC11EF618AB00EC9967 /* MapViewController.swift in Sources */,
+				041FFFD71EF6284200EC9967 /* GFGeoHashQuery.m in Sources */,
 				041891AE1EF09E4400A8ADD7 /* BookBee.xcdatamodeld in Sources */,
+				041FFFD51EF6284200EC9967 /* GFBase32Utils.m in Sources */,
+				041FFFD41EF6284200EC9967 /* GeoFire.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irina-dorofeeva.BookBee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookBee-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -371,7 +439,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irina-dorofeeva.BookBee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "BookBee-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

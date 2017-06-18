@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DEEAFFC66CE17EA12F3E6C7703C9F6550A398BEC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DEEAFFC66CE17EA12F3E6C7703C9F6550A398BEC" : 9223372036854775807,
+    "78BC981234DC9ACF745E820B97CE28D46F6D69E7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6551F930-DE71-440F-9F2F-319A8AFA3202",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DEEAFFC66CE17EA12F3E6C7703C9F6550A398BEC" : "BookBee\/",
+    "78BC981234DC9ACF745E820B97CE28D46F6D69E7" : "..\/geofire-objc"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BookBee",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BookBee.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/firebase\/geofire-objc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78BC981234DC9ACF745E820B97CE28D46F6D69E7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:IrinaDorofeeva\/BookBee.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DEEAFFC66CE17EA12F3E6C7703C9F6550A398BEC"
+    }
+  ]
+}
