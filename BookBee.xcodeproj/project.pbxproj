@@ -21,6 +21,10 @@
 		041FFFD61EF6284200EC9967 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFCF1EF6284200EC9967 /* GFGeoHash.m */; };
 		041FFFD71EF6284200EC9967 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFD11EF6284200EC9967 /* GFGeoHashQuery.m */; };
 		041FFFD81EF6284200EC9967 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFD31EF6284200EC9967 /* GFQuery.m */; };
+		041FFFDD1EF7B2C700EC9967 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 041FFFDA1EF7B2C700EC9967 /* pin.png */; };
+		041FFFDE1EF7B2C700EC9967 /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041FFFDB1EF7B2C700EC9967 /* pin@2x.png */; };
+		041FFFDF1EF7B2C700EC9967 /* pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041FFFDC1EF7B2C700EC9967 /* pin@3x.png */; };
+		041FFFE51EF7B5A200EC9967 /* ReaderAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FFFE41EF7B5A200EC9967 /* ReaderAnnotation.swift */; };
 		042768221EF33A2400604311 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042768211EF33A2400604311 /* Utilities.swift */; };
 		BC2A9546B479926B592391F3 /* Pods_BookBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +57,10 @@
 		041FFFD21EF6284200EC9967 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		041FFFD31EF6284200EC9967 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		041FFFD91EF629F600EC9967 /* BookBee-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookBee-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		041FFFDA1EF7B2C700EC9967 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = SOURCE_ROOT; };
+		041FFFDB1EF7B2C700EC9967 /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@2x.png"; sourceTree = SOURCE_ROOT; };
+		041FFFDC1EF7B2C700EC9967 /* pin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@3x.png"; sourceTree = SOURCE_ROOT; };
+		041FFFE41EF7B5A200EC9967 /* ReaderAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderAnnotation.swift; sourceTree = "<group>"; };
 		042768211EF33A2400604311 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7986F814DA5F25C224D7D5F9 /* Pods-BookBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookBee/Pods-BookBee.release.xcconfig"; sourceTree = "<group>"; };
 		BBDDFCA86DC9725AC64F7885 /* Pods_BookBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,10 +101,10 @@
 		041891A41EF09E4400A8ADD7 /* BookBee */ = {
 			isa = PBXGroup;
 			children = (
+				041FFFE11EF7B51E00EC9967 /* Model */,
+				041FFFE01EF7B51200EC9967 /* Controller */,
 				041FFFC21EF6284200EC9967 /* GeoFire */,
 				041891A51EF09E4400A8ADD7 /* AppDelegate.swift */,
-				041891A71EF09E4400A8ADD7 /* LoginViewController.swift */,
-				041FFFC01EF618AB00EC9967 /* MapViewController.swift */,
 				041891A91EF09E4400A8ADD7 /* Main.storyboard */,
 				041891AF1EF09E4400A8ADD7 /* Assets.xcassets */,
 				041891B11EF09E4400A8ADD7 /* LaunchScreen.storyboard */,
@@ -105,6 +113,9 @@
 				041891BA1EF09E6800A8ADD7 /* GoogleService-Info.plist */,
 				042768211EF33A2400604311 /* Utilities.swift */,
 				041FFFD91EF629F600EC9967 /* BookBee-Bridging-Header.h */,
+				041FFFDA1EF7B2C700EC9967 /* pin.png */,
+				041FFFDB1EF7B2C700EC9967 /* pin@2x.png */,
+				041FFFDC1EF7B2C700EC9967 /* pin@3x.png */,
 			);
 			path = BookBee;
 			sourceTree = "<group>";
@@ -146,6 +157,23 @@
 				041FFFD31EF6284200EC9967 /* GFQuery.m */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		041FFFE01EF7B51200EC9967 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041891A71EF09E4400A8ADD7 /* LoginViewController.swift */,
+				041FFFC01EF618AB00EC9967 /* MapViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		041FFFE11EF7B51E00EC9967 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				041FFFE41EF7B5A200EC9967 /* ReaderAnnotation.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		0F108B9F43AE3D3212BA512F /* Pods */ = {
@@ -230,7 +258,10 @@
 			files = (
 				041891B31EF09E4400A8ADD7 /* LaunchScreen.storyboard in Resources */,
 				041891B01EF09E4400A8ADD7 /* Assets.xcassets in Resources */,
+				041FFFDF1EF7B2C700EC9967 /* pin@3x.png in Resources */,
+				041FFFDE1EF7B2C700EC9967 /* pin@2x.png in Resources */,
 				041891AB1EF09E4400A8ADD7 /* Main.storyboard in Resources */,
+				041FFFDD1EF7B2C700EC9967 /* pin.png in Resources */,
 				041891BB1EF09E6800A8ADD7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +326,7 @@
 				041FFFD61EF6284200EC9967 /* GFGeoHash.m in Sources */,
 				041FFFD81EF6284200EC9967 /* GFQuery.m in Sources */,
 				042768221EF33A2400604311 /* Utilities.swift in Sources */,
+				041FFFE51EF7B5A200EC9967 /* ReaderAnnotation.swift in Sources */,
 				041FFFC11EF618AB00EC9967 /* MapViewController.swift in Sources */,
 				041FFFD71EF6284200EC9967 /* GFGeoHashQuery.m in Sources */,
 				041891AE1EF09E4400A8ADD7 /* BookBee.xcdatamodeld in Sources */,

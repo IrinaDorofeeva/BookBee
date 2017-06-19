@@ -12,7 +12,7 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class LoginViewController: UIViewController {
-
+    
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -31,8 +31,8 @@ class LoginViewController: UIViewController {
     @IBAction func loginTapped(_ sender: Any) {
         
         if (!CheckInput()){
-        
-        return }
+            
+            return }
         
         
         
@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
                 print ("error:\(error)")
                 Utilities().ShowAlert(title: "Error", message: error!.localizedDescription, vc: self)
                 
-           
+                
                 
             } else {
                 print("Signed in")
@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
         
     }
     
-  
+    
     @IBAction func signUpTapped(_ sender: Any) {
         if (!CheckInput()){
             return }
@@ -63,67 +63,60 @@ class LoginViewController: UIViewController {
         alert.addTextField { (textField) in textField.placeholder = "password" }
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) -> Void in
-                let passConfim = alert.textFields![0] as UITextField
-                if (passConfim.text!.isEqual(self.passwordTextField.text!)){
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) -> Void in
+            let passConfim = alert.textFields![0] as UITextField
+            if (passConfim.text!.isEqual(self.passwordTextField.text!)){
                 
-                    
-                    
-                    Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
-                        print("We tried to create a user")
-                        if error != nil{
-                            print ("error:\(error)")
+                
+                
+                Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
+                    print("We tried to create a user")
+                    if error != nil{
+                        print ("error:\(error)")
                         Utilities().ShowAlert(title: "Error", message: (error?.localizedDescription)!, vc: self)
-                            return
-                        }
-                        else {
-                            print ("user created")
-                            
-                            
-                            Database.database().reference().child("users").child((user?.uid)!).child("email").setValue(user?.email)
-                            Database.database().reference().child("users").child((user?.uid)!).child("name").setValue(self.nameTextField.text)
-                            Database.database().reference().child("users").child((user?.uid)!).child("location").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("title").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("author").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("about").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("age").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("gender").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("picture").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("following").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("chats").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("groups").setValue("")
-                            Database.database().reference().child("users").child((user?.uid)!).child("extraSettings").setValue("")
-                            
-                            
-                            //self.performSegue(withIdentifier: "signIn", sender: nil)
-                            self.dismiss(animated: true, completion: nil)
-                        }
-                    })
-                    
-                    
-                    
-                    
-                }
+                        return
+                    }
+                    else {
+                        print ("user created")
+                        
+                        
+                        Database.database().reference().child("users").child((user?.uid)!).child("email").setValue(user?.email)
+                        Database.database().reference().child("users").child((user?.uid)!).child("name").setValue(self.nameTextField.text)
+                        Database.database().reference().child("users").child((user?.uid)!).child("location").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("title").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("author").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("about").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("age").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("gender").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("picture").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("following").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("chats").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("groups").setValue("")
+                        Database.database().reference().child("users").child((user?.uid)!).child("extraSettings").setValue("")
+                        
+                        
+                        //self.performSegue(withIdentifier: "signIn", sender: nil)
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                })
+            }
                 
-                else {
-               Utilities().ShowAlert(title: "Error", message: "Passwords not the same!" , vc: self)
-                }
-
+            else {
+                Utilities().ShowAlert(title: "Error", message: "Passwords not the same!" , vc: self)
+            }
             
-            }))
+            
+        }))
         
         self.present(alert, animated: true, completion: nil)
-    
     }
-    
-    
     func CheckInput () -> Bool{
         if ((emailTextField.text?.characters.count)! < 5){
             emailTextField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
             return false
         }
         else {
-        emailTextField.backgroundColor = UIColor.white
+            emailTextField.backgroundColor = UIColor.white
         }
         
         if ((passwordTextField.text?.characters.count)! < 5){
@@ -135,35 +128,33 @@ class LoginViewController: UIViewController {
         }
         return true
     }
-
-        
-        
+    
+    
+    
     @IBAction func forgotPasswordTapped(_ sender: Any) {
         if (!emailTextField.text!.isEmpty){
-        let email = self.emailTextField.text
+            let email = self.emailTextField.text
             Auth.auth().sendPasswordReset(withEmail: email!, completion: {(error) in
                 if let error = error{
                     Utilities().ShowAlert(title: "Error", message: error.localizedDescription, vc: self)
                     return
                 }
-            Utilities().ShowAlert(title:"Success!", message: "Please check your email!" , vc: self)
+                Utilities().ShowAlert(title:"Success!", message: "Please check your email!" , vc: self)
             })
-        
-        
+        }
     }
-    }
-        
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
