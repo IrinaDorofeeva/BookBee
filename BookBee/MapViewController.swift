@@ -119,8 +119,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func showReadersOnMap(location: CLLocation){
-    let circleQuery = geoFire!.query(at: location, withRadius: 2000.5)
+        let circleQuery = geoFire!.query(at: location, withRadius: 2000.5)
         _ = circleQuery?.observe(GFEventType.keyEntered, with: {(key, location) in
+        
+     //   let span = MKCoordinateSpanMake(2, 2)
+     //   let region = MKCoordinateRegionMake(location.coordinate, span)
+     //   let regionQuery = geoFire!.query(with: region)
+     //   _ = regionQuery?.observe(GFEventType.keyEntered, with: {(key, location) in
             if let key = key, let location = location {
                 let anno = ReaderAnnotation(coordinate: location.coordinate, readerId: key)
                 self.mapView.addAnnotation(anno)
